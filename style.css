@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.jikan {
+    position: absolute;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.twelve {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three {
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.six {
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.nine {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hand {
+    background-color: #333;
+    transition: all .5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+    width: 5px;
+    height: 130px;
+}
+
+.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 150px;
+}
+
+.second {
+    background-color: #dc3545;
+    height: 160px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.center-point {
+    background-color: #dc3545;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-point::after {
+    background-color: #333;
+    transition: all 0.5s ease-in;
+    border-radius: 50%;
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
